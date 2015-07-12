@@ -22,7 +22,7 @@ $(function(){
           }
         },
         onAfter: function ($container, $newContent) {
-          $('body').fadeIn(250);
+          $('body').fadeIn(220);
           $main.removeClass('is-exiting');
           
           $main.html($newContent);
