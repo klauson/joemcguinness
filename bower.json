@@ -7,7 +7,8 @@
     "animate.css": "~3.3.0",
     "smoothstate": "~0.7.2",
     "fitvids": "~1.1.0",
-    "fittext": "*"
+    "fittext": "*",
+    "font-awesome": "~4.3.0"
   },
   "overrides": {
     "bootstrap-sass": {

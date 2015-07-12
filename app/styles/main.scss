@@ -5,6 +5,8 @@ $icon-font-path: '../fonts/';
 // endbower
 @import url(http://fonts.googleapis.com/css?family=Asset);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
+@import "_tour.scss";
+@import "_audio.scss";
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -54,6 +56,24 @@ h2 {
   font-family: 'Asset', cursive;
   font-size: 4rem;
 }
+h3 {
+  margin-top: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  padding: 5px;
+  opacity: 1;
+  color: #ececec;
+  text-shadow: 0px 0px 15px rgba(66, 66, 66, 1);
+      background: rgba(51, 51, 51, .7);
+    -webkit-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+}
+p{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+}
 .bg {
  background: url(../images/joemain.jpg)  no-repeat center center fixed; 
       -webkit-background-size: cover;
@@ -79,7 +99,7 @@ object {
   max-width: 100%;
 }
 .vendor {
-  padding: 7% 7% 7% 3%;
+  padding: 3% 7% 0 3%;
   margin-bottom: 2em;
 }
 
@@ -154,6 +174,10 @@ a {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
 
+.m-scene .scene_element--fadeinleft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
 /* line 32, /Users/mperez/Sites/smoothstate/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--delayed {
   -webkit-animation-delay: 0.5s;
@@ -176,3 +200,47 @@ a {
   .m-scene .scene_element--fadeinright-wide {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight; } }
+
+
+
+
+
+
+.bmenup{
+    padding: 0px;
+    margin: 0 0 0 2%;
+    position: relative;
+}
+.bmenup li{
+    font-size: 6rem;
+    display: inline-block;
+    padding: 0px 43px 0px 0;
+}
+.bmenup a{
+  color: rgba(51, 51, 51, .3);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  opacity: .7;
+  display:block;
+  text-shadow: 0px 0px 5px rgba(51, 51, 51, .6);
+  letter-spacing: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.bmenup:hover li a{
+  text-shadow: 0px 0px 20px rgba(66, 66, 66, 1);
+  opacity: .7;
+}
+.bmenup a:hover{
+  opacity: 1;
+  color: #ececec;
+  text-shadow: 0px 0px 15px rgba(66, 66, 66, 1);
+}
+.bmenup li a.selected {
+  opacity: 1;
+  color: #ececec;
+  text-shadow: 0px 0px 15px rgba(66, 66, 66, 1);
+}
